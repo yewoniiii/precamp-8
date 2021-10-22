@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper__header {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__header__title {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__header__title .title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #55b2d4;
+}
+
+.wrapper__header__title .subtitle {
+    padding-left: 5px;
+    font-size: 8px;
+}
+
+.divideLine {
+    width: 100%;
+    border-top: 1px solid #999999;
+}
+
+.wrapper__word {
+    width: 222px;
+    height: 168px;
+    background-color: #f6f6f6;
+    border: 1px solid gray;
+    /* 모서리 둥글게 해줌 */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper__word__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper__word__header .title {
+    font-size: 11px;
+    /* 위와 거리를 조금 띄어줌 */
+    padding-top: 5px;
+}
+
+.wrapper__word__header .word_title {
+    font-size: 10px;
+    padding-top: 5px;
+    color: #999999;
+}
+
+.wrapper__word__body {
+    
+}
+
+.wrapper__word__footer {
+    font-size: 11px;
+    /* font-weight : 폰트 두께 */
+    font-weight: 700;
+    color: #999999;
+}
+
+.wrapper__lotto {
+    width: 222px;
+    height: 168px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.wrapper__lotto__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper__lotto__header .title {
+    font-size: 11px;
+    /* padding-top: 5px; */
+}
+
+.wrapper__lotto__header .lotto_title {
+    font-size: 10px;
+    color: #999999;
+    padding-top: 5px;
+}
+
+.wrapper__lotto__body {
+
+}
+
+.wrapper__lotto__body .lotto_numbers {
+    width: 130px;
+    height: 21px;
+    border: 1px solid #999999;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #ffe400;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.wrapper__lotto__result {
+
+}
+
+
+

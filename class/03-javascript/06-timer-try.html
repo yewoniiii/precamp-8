@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>인증번호 실습</title>
+    <script>
+
+        let isStarted = false
+
+        const aaa=()=> {
+            if (isStarted === false) {
+                isStarted = true
+                const token = String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+                document.getElementById("qqq").innerText = token
+                // let time = 180
+                let time = Number(document.getElementById("minute").innerText)*60 + Number(document.getElementById("second").innerText)
+                setInterval(function() {
+                    // const time = number(document.getElementById("minute").innerText)*60+number(document.getElementById("second").innerText)
+                    if (time>=0) {
+                        let minutes = Math.floor(time / 60)
+                        let seconds = time % 60  
+                        document.getElementById("minute").innerText = String(minutes)
+                        document.getElementById("second").innerText = String(seconds).padStart(2,"0")
+                        time--;          
+                    }
+                },1000)
+            } else {
+                alert("이미 실행되었습니다!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <span id="qqq">000000</span><button onclick="aaa()">인증번호 전송</button><br />
+    <span id="minute">3</span> <span>:</span> <span id="second">00</span><button disabled>인증완료</button>
+</body>
+</html>
+

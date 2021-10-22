@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>로또</title>
+    <script>
+        const aaa=()=> {
+            const nums = []
+            while (nums.length<=6) {
+                let num = String(Math.floor(Math.random()*45+1))
+                if (nums.includes(num)) {continue}
+                else {nums.push(num)}
+            }
+            const result = ""
+            for (let i=0; i<nums.length; i++) {
+                result = result + " " + String(nums[i])
+            }
+            document.getElementById("qqq").innerText = result
+        }
+    </script>
+</head>
+<body>
+    <h1 id="qqq">로또</h1>
+    <button onclick="aaa()">LOTTO</button>
+</body>
+</html>
